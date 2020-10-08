@@ -1,0 +1,34 @@
+{
+  "name": "jaystudy",
+  "version": "1.0.0",
+  "description": "independent self study codes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "backend": "nodemon server/server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaewonks/JayStudy.git"
+  },
+  "author": "Jaewon Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaewonks/JayStudy/issues"
+  },
+  "homepage": "https://github.com/jaewonks/JayStudy#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.8",
+    "nodemon": "^2.0.4",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5"
+  }
+}
